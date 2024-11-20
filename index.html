@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="lnombre">Nombre</label><br>
+        <input type="text" id="nombre" placeholder="Nombre" name="lnombre" pattern="[a-zA-Z0-9!*\$%]+" >
+        <input type="text" id="apellidos" placeholder="Apellidos" name="lnombre" pattern="[a-zA-Z0-9!*\$%]+"><br>
+
+        <label for="lusuario">Nombre de usuario</label><br>
+        <input class="mayuscula" type="email" id="email" placeholder="@gmail.com" name="lusuario" pattern="[a-zA-Z0-9!*\$%]+"><br>
+
+        <label for="lcontraseña">Contraseña</label><br>
+        <input class="mayuscula" type="password" id="contraseña" name="lcontraseña"  pattern="[a-zA-Z0-9!*\$%]+"><br>
+
+        <label for="lnacimiento">Fecha de nacimiento</label><br>
+        <input type="number" id ="dia" placeholder="Dia" name="lnacimiento" min="1" max="31" >
+        <select id="mes" name="lnacimiento">
+            <option value="mes">Mes</option>
+            <option value="enero">Enero</option>
+            <option value="febrero">febrero</option>
+            <option value="marzo">marzo</option>
+            <option value="abril">abril</option>
+            <option value="mayo">mayo</option>
+            <option value="junio">junio</option>
+            <option value="julio">julio</option>
+            <option value="agosto">agosto</option>
+            <option value="septiembre">septiembre</option>
+            <option value="octubre">octubre</option>
+            <option value="noviembre">noviembre</option>
+            <option value="diciembre">diciembre</option>
+        </select>
+        <input type="number" id ="año" placeholder="Año" name="lnacimiento" >
+
+        <input type="text" id="fechanacimiento" placeholder="Aqui va aparecer mi edad" name="lfechanacimiento"><br>
+
+        <label for="lsexo">Sexo</label><br>
+        <select id="sexo" name="lsexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br>
+
+        <label for="ltelefono">Telefono movil</label><br>
+        <input type="tel" id="telefono" name="ltelefono" placeholder="+34" ><br>
+
+        <label for="lcorreo">Tu direccion de correo actual</label><br>
+        <input class="mayuscula" type="email" id="correo" name="lcorreo"  pattern="[a-zA-Z0-9!*\$%]+"><br>
+        <input type="submit" id="mayuscula" value="Mayuscula">
+    </form>
+    <script src="2.js"></script>
+</body>
+</html>
