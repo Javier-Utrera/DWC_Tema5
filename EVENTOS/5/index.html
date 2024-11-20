@@ -8,13 +8,13 @@
 <body>
 
     <h2>Formulario de Envío de SMS</h2>
-    
-    <form action="#" method="post">
+    <form>
         <label for="sms">Mensaje (máximo 145 caracteres):</label><br>
-        <textarea id="sms" name="sms" rows="4" cols="50" maxlength="145" 
-                  oninput="this.value = this.value.replace(/[^a-zA-Z0-9áéíóúÁÉÍÓÚñÑ.,!?¿¡:;()@]/g, '')"></textarea><br>
-        <p id="caracteresRestantes">Caracteres restantes: </p>
+        <textarea id="sms" name="sms" rows="4" cols="50" maxlength="145"></textarea>
+        <br>
+        <input type="submit"/>
     </form>
+    <p id="caracteresRestantes">Caracteres restantes: </p>
     <script src="5.js"></script>
 </body>
 </html>
