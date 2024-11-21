@@ -3,7 +3,7 @@
 window.addEventListener("load",inicializar,false);
 function inicializar(){
     document.getElementById("mayuscula").addEventListener("click",mayuscula,false);
-    document.getElementById("año").addEventListener("click",edad,false);
+    document.getElementById("año").addEventListener("keyup",edad,false);
 }
 
 function mayuscula(){
@@ -18,6 +18,7 @@ function mayuscula(){
     }
 }
 function edad(){
-    let fecha = new Date();
-    
+    let fechaactual = new Date(Date.now());
+    let anionacimiento = document.getElementById("año").value;
+    document.getElementById("fechanacimiento").value=fechaactual.getFullYear()-anionacimiento;   
 }
