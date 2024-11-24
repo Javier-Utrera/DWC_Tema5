@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="8.js"></script>
+</head>
+<body>
+    <form method="post" id ="formulario">
+        
+        <label for="lnombre">Nombre</label><br>
+        <input type="text" id="nombre" placeholder="Nombre" name="lnombre" >
+        <input type="text" id="apellidos" placeholder="Apellidos" name="lnombre" ><br>
+
+        <label for="emailusuario">Nombre de usuario</label><br>
+        <input type="email" placeholder="@gmail.com" name="emailusuario"><br>
+
+        <label for="lcontraseña">Contraseña</label><br>
+        <input type="password" id="contraseña" name="lcontraseña"><br>
+
+        <label for="lnacimiento">Fecha de nacimiento</label><br>
+        <input type="number" id ="dia" placeholder="Dia" name="lnacimiento" min="1" max="31" >
+        <select id="mes" name="lnacimiento">
+            <option value="mes">Mes</option>
+            <option value="enero">Enero</option>
+            <option value="febrero">febrero</option>
+            <option value="marzo">marzo</option>
+            <option value="abril">abril</option>
+            <option value="mayo">mayo</option>
+            <option value="junio">junio</option>
+            <option value="julio">julio</option>
+            <option value="agosto">agosto</option>
+            <option value="septiembre">septiembre</option>
+            <option value="octubre">octubre</option>
+            <option value="noviembre">noviembre</option>
+            <option value="diciembre">diciembre</option>
+        </select>
+        <input type="number" id ="año" placeholder="Año" name="lnacimiento" >
+
+        <input type="text" id="fechanacimiento" placeholder="Aqui va aparecer mi edad" name="lfechanacimiento" disabled><br>
+
+        <label for="lsexo">Sexo</label><br>
+        <select id="sexo" name="lsexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br>
+
+        <label for="ltelefono">Telefono movil</label><br>
+        <input type="tel" id="telefono" name="ltelefono" placeholder="+34" ><br>
+
+        <label for="emailactual">Tu direccion de correo actual</label><br>
+        <input type="email"  name="emailactual"><br>
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Enviar">
+    </form>
+    </form>
+
+</body>
+</html>
